@@ -69,7 +69,7 @@ class ChatScreenViewModel extends BaseModel{
               message: message,
               sender: user,
               username: username,
-              timeSent: DateTime.now(),
+              timeSent: _chatService.timeStamp,
               isImage: false
           ),
         chatId: _chatId);

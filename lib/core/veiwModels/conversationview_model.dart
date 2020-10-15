@@ -44,7 +44,7 @@ class ConversationViewModel extends BaseModel{
           message: message,
           username: username,
           sender: _authenticationService.currentUser.id,
-          timeSent: DateTime.now(),
+          timeSent: _communityService.timeStamp,
           isImage: false
       ),
           communityId: communityId
@@ -55,7 +55,7 @@ class ConversationViewModel extends BaseModel{
         message: message,
         username: username,
         sender: _authenticationService.currentUser.id,
-        timeSent: DateTime.now(),
+        timeSent: _groupService.timeStamp,
         isImage: false,
       ),
           groupId: groupId

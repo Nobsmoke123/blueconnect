@@ -1,10 +1,11 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
 class Chat{
   final String message;
   final String sender;
   final String username;
-  final DateTime timeSent;
+  final dynamic timeSent;
   final bool isImage;
 
   Chat({
@@ -19,7 +20,7 @@ class Chat{
     : message  =  data['message'],
       sender   =  data['sender'],
       username =  data['username'],
-      timeSent =  DateTime.tryParse(data['timeSent']),
+      timeSent =  data['timeSent'],
       isImage  =  data['isImage'];
 
 

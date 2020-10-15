@@ -13,6 +13,8 @@ class ChannelService {
 
   final StreamController<List<Chat>> _channelChatController = StreamController<List<Chat>>.broadcast();
 
+  FieldValue get timeStamp => FieldValue.serverTimestamp();
+
   // Create Channel
   Future createChannel(Channel channel) async{
     try{

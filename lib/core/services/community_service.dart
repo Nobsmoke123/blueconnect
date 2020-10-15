@@ -13,6 +13,8 @@ class CommunityService {
 
   final StreamController<List<Chat>> _communityChats = StreamController<List<Chat>>.broadcast();
 
+  FieldValue get timeStamp => FieldValue.serverTimestamp();
+
   // Create community
   Future createCommunity(Community community) async{
     try{

@@ -12,6 +12,8 @@ class GroupService {
 
   final StreamController<List<Chat>> _groupChatController = StreamController<List<Chat>>.broadcast();
 
+  FieldValue get timeStamp => FieldValue.serverTimestamp();
+
   // Create Group
   Future createGroup(Group group) async{
     try{

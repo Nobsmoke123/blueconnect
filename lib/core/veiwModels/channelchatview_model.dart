@@ -43,7 +43,7 @@ class ChannelChatViewModel extends BaseModel{
           message: message,
           username: username,
           sender: _authenticationService.currentUser.id,
-          timeSent: DateTime.now(),
+          timeSent: _channelService.timeStamp,
           isImage: false
       ),
           channelId: channelId

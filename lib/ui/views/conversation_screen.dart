@@ -181,14 +181,14 @@ class _ConversationScreenState extends State<ConversationScreen> {
                                       fontFamily: 'PoppinsRegular'),
                                 ),
                                 Divider(),
-                                Text(
-                                  '${model.chats[index].timeSent.hour}:${model.chats[index].timeSent.minute} ',
-                                  textAlign: model.chats[index].sender != model.user
-                                      ? TextAlign.left
-                                      : TextAlign.right,
-                                  style: TextStyle(
-                                      color: KPrimaryWhite, fontSize: 10),
-                                ),
+                                // Text(
+                                //   '${model.chats[index].timeSent.hour}:${model.chats[index].timeSent.minute} ',
+                                //   textAlign: model.chats[index].sender != model.user
+                                //       ? TextAlign.left
+                                //       : TextAlign.right,
+                                //   style: TextStyle(
+                                //       color: KPrimaryWhite, fontSize: 10),
+                                // ),
                               ],
                             ),
                           ),

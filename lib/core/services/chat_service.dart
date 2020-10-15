@@ -12,6 +12,8 @@ class ChatService {
 
   final StreamController<List<Chat>> _personalChatController = StreamController<List<Chat>>.broadcast();
 
+  FieldValue get timeStamp => FieldValue.serverTimestamp();
+
   // Get the active chats
   Stream getActiveChats ({ String userId }){
     _chatCollection.where("users",arrayContains: userId).snapshots().listen((activeChatSnapshots) {
